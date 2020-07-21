@@ -9,7 +9,7 @@ namespace ClassroomClassPractice
         { get; set; }
         public string Last
         { get; set; }
-        public int age;
+        private int age;
         public int Age
         {
             get { return age; }
@@ -40,7 +40,7 @@ namespace ClassroomClassPractice
         }
 
         public void SayHi() {
-            Console.WriteLine($"Hi my name is {this.First}");
+            Console.WriteLine($"Hi my name is {this.First} {this.Last}");
         }
     }
 }
