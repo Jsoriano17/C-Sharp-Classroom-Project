@@ -1,0 +1,12 @@
+/Users/SomeWeirdWizard/Desktop/ClassroomClassPractice/bin/Debug/netcoreapp3.1/ClassroomClassPractice.deps.json
+/Users/SomeWeirdWizard/Desktop/ClassroomClassPractice/bin/Debug/netcoreapp3.1/ClassroomClassPractice.runtimeconfig.json
+/Users/SomeWeirdWizard/Desktop/ClassroomClassPractice/bin/Debug/netcoreapp3.1/ClassroomClassPractice.runtimeconfig.dev.json
+/Users/SomeWeirdWizard/Desktop/ClassroomClassPractice/bin/Debug/netcoreapp3.1/ClassroomClassPractice.dll
+/Users/SomeWeirdWizard/Desktop/ClassroomClassPractice/bin/Debug/netcoreapp3.1/ClassroomClassPractice.pdb
+/Users/SomeWeirdWizard/Desktop/ClassroomClassPractice/obj/Debug/netcoreapp3.1/ClassroomClassPractice.csprojAssemblyReference.cache
+/Users/SomeWeirdWizard/Desktop/ClassroomClassPractice/obj/Debug/netcoreapp3.1/ClassroomClassPractice.AssemblyInfoInputs.cache
+/Users/SomeWeirdWizard/Desktop/ClassroomClassPractice/obj/Debug/netcoreapp3.1/ClassroomClassPractice.AssemblyInfo.cs
+/Users/SomeWeirdWizard/Desktop/ClassroomClassPractice/obj/Debug/netcoreapp3.1/ClassroomClassPractice.csproj.CoreCompileInputs.cache
+/Users/SomeWeirdWizard/Desktop/ClassroomClassPractice/obj/Debug/netcoreapp3.1/ClassroomClassPractice.dll
+/Users/SomeWeirdWizard/Desktop/ClassroomClassPractice/obj/Debug/netcoreapp3.1/ClassroomClassPractice.pdb
+/Users/SomeWeirdWizard/Desktop/ClassroomClassPractice/obj/Debug/netcoreapp3.1/ClassroomClassPractice.genruntimeconfig.cache
