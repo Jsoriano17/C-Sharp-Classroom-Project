@@ -28,7 +28,7 @@ namespace ClassroomClassPractice
             get { return grade; }
             set { grade = value; }
         }
-        public int StudentId;
+        public int StudentId; // this should probably be private as its going to randomly generate an id
         public Student(string firstName, string lastName, int studentAge, int studentGrade, int studentId)
         {
             First = firstName;
