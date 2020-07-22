@@ -21,7 +21,6 @@ namespace ClassroomClassPractice
                     age = value;
                 }
             }
-
         }
         public int grade;
         public int Grade
