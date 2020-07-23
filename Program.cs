@@ -17,12 +17,18 @@ namespace ClassroomClassPractice
             string lowerInput = input.ToLower();
             string[] classroom = new string[4];
             string[] teacher = new string[3];
+            Student[] students = new Student[30];
             switch (lowerInput)
             {
                 case "yes":
                     Console.WriteLine("Great!");
                     Thread.Sleep(1000);
                     classroom = ClassroomInformation();
+                    Thread.Sleep(2000);
+                    Console.WriteLine("now we should assign a teacher to your classroom.");
+                    teacher = CreateTeacher();
+                    Console.WriteLine("Ok now its time to add some students into your class");
+                    students = CreateStudents(classroom[3], classroom[2]);
                     break;
                 case "no":
                     Console.WriteLine("Okay have a nice day! ");
@@ -32,9 +38,6 @@ namespace ClassroomClassPractice
                     CreateClassroom();
                     break;
             }
-            Thread.Sleep(2000);
-            Console.WriteLine("now we should assign a teacher to your classroom.");
-            teacher = CreateTeacher();
         }
         static string[] CreateTeacher()
         {
@@ -77,6 +80,34 @@ namespace ClassroomClassPractice
 
             return teacher;
         }
+        static Student[] CreateStudents(string numberOfStudents, string classroomGrade)
+        {
+            int studentNumber = 0;
+            Int32.TryParse(numberOfStudents, out studentNumber);
+            Student[] students = new Student[studentNumber];
+            for (int i = 0; i < studentNumber; i++)
+            {
+                Student kid = new Student();
+                Console.WriteLine("Please put the first name of the student");
+                kid.First = Console.ReadLine();
+                Console.WriteLine("Please put the last name of the student");
+                kid.Last = Console.ReadLine();
+                Console.WriteLine("Please put the age of the student");
+                kid.Age = Console.ReadLine();
+                Console.WriteLine("generating student id...");
+                Thread.Sleep(2000);
+                kid.Grade = classroomGrade;
+                kid.StudentId = Get8Digits();
+                Console.WriteLine("******* Student information *******");
+                Console.WriteLine($"name: {kid.First} {kid.Last}");
+                Console.WriteLine($"student age: {kid.Age}");
+                Console.WriteLine($"student grade: {kid.Grade}");
+                Console.WriteLine($"student id: {kid.StudentId}");
+                Console.WriteLine("**********************************");
+                students[i] = kid;
+            }
+            return students;
+        }
         static string[] ClassroomInformation()
         {
             String[] classroom = new string[4];
@@ -101,8 +132,8 @@ namespace ClassroomClassPractice
             Console.WriteLine("******* classroom information *******");
             Console.WriteLine($"Classroom number: {classroom[1]}");
             Console.WriteLine($"Subject you're teaching: {classroom[0]}");
-            Console.WriteLine($"Grade you teach: {classroom[1]}");
-            Console.WriteLine($"Amount of students in class: {classroom[2]}");
+            Console.WriteLine($"Grade you teach: {classroom[2]}");
+            Console.WriteLine($"Amount of students in class: {classroom[3]}");
             return classroom;
 
         }
