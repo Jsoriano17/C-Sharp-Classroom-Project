@@ -29,6 +29,9 @@ namespace ClassroomClassPractice
                     teacher = CreateTeacher();
                     Console.WriteLine("Ok now its time to add some students into your class");
                     students = CreateStudents(classroom[3], classroom[2]);
+                    Console.WriteLine("Great! now we have your classroom setup!");
+                    Console.WriteLine("Lets go through all the classroom information");
+                    ClassroomFinal(classroom, teacher, students);
                     break;
                 case "no":
                     Console.WriteLine("Okay have a nice day! ");
@@ -135,6 +138,34 @@ namespace ClassroomClassPractice
             Console.WriteLine($"Grade you teach: {classroom[2]}");
             Console.WriteLine($"Amount of students in class: {classroom[3]}");
             return classroom;
+
+        }
+
+        static void ClassroomFinal(string[] classroom, string[] teacher, Student[] students)
+        {
+            Thread.Sleep(1000);
+            Console.WriteLine("******* classroom information *******");
+            Console.WriteLine($"Classroom number: {classroom[1]}");
+            Console.WriteLine($"Subject you're teaching: {classroom[0]}");
+            Console.WriteLine($"Grade you teach: {classroom[2]}");
+            Console.WriteLine($"Amount of students in class: {classroom[3]}");
+            Thread.Sleep(1000);
+            Console.WriteLine("******* teacher information *******");
+            Console.WriteLine($"Mr.{teacher[1]}");
+            Console.WriteLine($"First Name: {teacher[0]}");
+            Console.WriteLine($"Last Name: {teacher[1]}");
+            Console.WriteLine($"Teacher Id: {teacher[2]}");
+            Thread.Sleep(1000);
+            Console.WriteLine("******* list of students *******");
+            for (int i = 0; i < students.Length; i++)
+            {
+                Console.WriteLine("**********************************");
+                Console.WriteLine($"name: {students[i].First} {students[i].Last}");
+                Console.WriteLine($"student age: {students[i].Age}");
+                Console.WriteLine($"student grade: {students[i].Grade}");
+                Console.WriteLine($"student id: {students[i].StudentId}");
+                Console.WriteLine("**********************************");
+            }
 
         }
         static string Get8Digits()
